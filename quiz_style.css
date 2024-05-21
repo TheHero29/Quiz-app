@@ -96,6 +96,7 @@ body {
 }
 
 .option:hover {
+    border-width: 3px;
     background-color: #f0f0f0;
     border-color: #007bff;
 }
@@ -130,6 +131,14 @@ button {
     transition: background-color 0.3s ease;
     margin: 10px 0;
     width: 100%;
+}
+
+.correct {
+    background-color: #8bc34a;
+}
+
+.wrong {
+    background-color: #f44336;
 }
 
 button:hover {
