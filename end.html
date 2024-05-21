@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Score</title>
+    <link rel="stylesheet" href="quiz_style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="scoreMessage">Your score is: <span id="finalScore"></span></div>
+        <button id="playAgain">Play Again</button>
+        <button id="goHome">Go Home</button>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const score = localStorage.getItem('quizScore');
+            document.getElementById('finalScore').textContent = score;
+            
+            document.getElementById('playAgain').addEventListener('click', function() {
+                window.location.href = 'quiz.html';
+            });
+
+            document.getElementById('goHome').addEventListener('click', function() {
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+</body>
+</html>
