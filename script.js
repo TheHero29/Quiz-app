@@ -48,7 +48,7 @@ function loadQuestion() {
 
     optionButtons.forEach((button, index) => {
         button.textContent = q.options[index];
-        button.classList.remove('correct', 'wrong','clicked');
+        button.classList.remove('correct','wrong','clicked');
         button.disabled = false;
     });
 
@@ -60,7 +60,6 @@ function loadQuestion() {
 
 function checkAnswer(button, index) {
     const q = questions[currentQuestion];
-    // button.classList.add('clicked');
     if (q.options[index] === q.answer) {
         score+=10;
         scoreElement.textContent = score;

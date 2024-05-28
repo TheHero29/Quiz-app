@@ -36,7 +36,12 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 10px 0;
-    width: calc(100% - 40px); /* Reduced width to allow space for padding */
+    width: calc(100% - 40px);  
+    /* Reduced width to allow space for padding*/
+} 
+
+.clicked{
+    transform: none;
 }
 
 button:hover {

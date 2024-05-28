@@ -75,7 +75,7 @@ body {
     padding: 15px 20px;
     font-size: 18px;
     border: 1px solid #ccc;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     color: #333;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -97,7 +97,6 @@ body {
 
 .option:hover {
     border-width: 3px;
-    background-color: #f0f0f0;
     border-color: #007bff;
 }
 
@@ -120,27 +119,15 @@ body {
     margin-bottom: 20px;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 10px 0;
-    width: 100%;
-}
 
 .correct {
     background-color: #8bc34a;
 }
 
 .wrong {
-    background-color: #f44336;
+    background-color: #eb5d53;
 }
 
 button:hover {
-    background-color: #0056b3;
+    border-color: #0056b3;
 }
